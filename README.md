@@ -1,11 +1,11 @@
 # Big Data Analysis Project — Billionaires Statistics Dataset
 
-> 🇬🇧 [English](#english) | 🇬🇷 [Ελληνικά](#greek)
+>  [English](#english) |  [Ελληνικά](#greek)
 
 ---
 
 <a name="english"></a>
-## 🇬🇧 English
+##  English
 
 ### Overview
 
@@ -13,27 +13,14 @@ This project performs a comprehensive big data analysis on the **Billionaires St
 
 ---
 
-### 📁 Repository Structure
 
-```
-Big-Data-Analysis-Project/
-│
-├── Billionaires Statistics Dataset.csv     # Original dataset
-├── Dataset_analysis_code.py               # Main Python analysis script
-├── WrittenReport_inGreek.pdf              # Written report (in Greek)
-├── Εργασία-ΔΧΜΚ-Απρ24.pdf               # Assignment description (in Greek)
-└── README.md
-```
-
----
-
-### 📊 Dataset
+###  Dataset
 
 The dataset contains statistics about billionaires worldwide. Each record includes the billionaire's wealth ranking (`rank`) and net worth in USD (`finalWorth`), along with personal attributes such as full name, age, country of residence, gender, and whether they are self-made. It also captures the industry or business category they operate in and the primary source of their wealth. On the macroeconomic side, each record includes the Consumer Price Index (`cpi_country`), GDP (`gdp_country`), tertiary education enrollment rate, and total tax rate of the billionaire's country of residence.
 
 ---
 
-### ⚙️ Methodology
+###  Methodology
 
 #### Data Preprocessing
 
@@ -57,13 +44,8 @@ Each algorithm was assessed using the **Silhouette Coefficient** (ranging from -
 
 ---
 
-### 🔬 Analysis Examples
 
-Two pairs of features were used to demonstrate and compare the clustering algorithms. The first example analyzed `finalWorth` against `age`, while the second examined `finalWorth` against `total_tax_rate_country`.
-
----
-
-### 🛠️ Requirements
+###  Requirements
 
 ```bash
 pip install pandas matplotlib seaborn scikit-learn scipy
@@ -73,30 +55,21 @@ pip install pandas matplotlib seaborn scikit-learn scipy
 
 ---
 
-### ▶️ How to Run
+###  How to run the code
 
 Clone the repository and navigate into it with `git clone https://github.com/mrns20/Big-Data-Analysis-Project.git && cd Big-Data-Analysis-Project`. Then install the required dependencies using `pip install pandas matplotlib seaborn scikit-learn scipy`, and finally run the analysis script with `python Dataset_analysis_code.py`. Make sure the `Billionaires Statistics Dataset.csv` file is located in the same directory as the script before running.
 
 ---
 
-### 📈 Output
+###  Output
 
 Running the script produces a series of preprocessed and normalized CSV files, as well as a set of visualizations including dendrograms for hierarchical clustering, scatter plots for each of the three clustering methods, and SSE and Silhouette Coefficient plots for K-Means across different values of k. A summary comparing the Silhouette Coefficient and execution time of all three algorithms is also printed to the console.
 
 ---
 
-### 📚 References
-
-- [Scikit-learn Documentation](https://scikit-learn.org/)
-- [GeeksForGeeks — Outlier Detection in Python](https://www.geeksforgeeks.org/detect-and-remove-the-outliers-using-python/)
-- [Matplotlib Subplots](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_demo.html)
-- [Seaborn Tutorial](https://www.geeksforgeeks.org/python-seaborn-tutorial/)
-- [StandardScaler — Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
-
----
 
 <a name="greek"></a>
-## 🇬🇷 Ελληνικά
+##  Ελληνικά
 
 ### Επισκόπηση
 
@@ -104,27 +77,13 @@ Running the script produces a series of preprocessed and normalized CSV files, a
 
 ---
 
-### 📁 Δομή Αποθετηρίου
-
-```
-Big-Data-Analysis-Project/
-│
-├── Billionaires Statistics Dataset.csv     # Αρχικό σύνολο δεδομένων
-├── Dataset_analysis_code.py               # Κύριο αρχείο Python ανάλυσης
-├── WrittenReport_inGreek.pdf              # Γραπτή αναφορά (στα Ελληνικά)
-├── Εργασία-ΔΧΜΚ-Απρ24.pdf               # Εκφώνηση εργασίας (στα Ελληνικά)
-└── README.md
-```
-
----
-
-### 📊 Σύνολο Δεδομένων
+###  Σύνολο Δεδομένων
 
 Το dataset περιέχει στατιστικά στοιχεία για δισεκατομμυριούχους παγκοσμίως. Κάθε εγγραφή περιλαμβάνει την κατάταξη βάσει πλούτου (`rank`) και την καθαρή περιουσία σε USD (`finalWorth`), καθώς και προσωπικά χαρακτηριστικά όπως το πλήρες όνομα, η ηλικία, η χώρα διαμονής, το φύλο και αν ο δισεκατομμυριούχος αυτοδημιουργήθηκε. Επίσης καταγράφονται ο κλάδος δραστηριότητας και η κύρια πηγή πλούτου. Σε μακροοικονομικό επίπεδο, κάθε εγγραφή συμπεριλαμβάνει τον Δείκτη Τιμών Καταναλωτή (`cpi_country`), το ΑΕΠ (`gdp_country`), το ποσοστό εγγραφής στην τριτοβάθμια εκπαίδευση και τον συνολικό φορολογικό συντελεστή της χώρας διαμονής.
 
 ---
 
-### ⚙️ Μεθοδολογία
+###  Μεθοδολογία
 
 #### Προεπεξεργασία Δεδομένων
 
@@ -148,13 +107,7 @@ Big-Data-Analysis-Project/
 
 ---
 
-### 🔬 Παραδείγματα Ανάλυσης
-
-Χρησιμοποιήθηκαν δύο ζεύγη χαρακτηριστικών για την επίδειξη και σύγκριση των αλγορίθμων συσταδοποίησης. Το πρώτο παράδειγμα ανέλυσε τη σχέση μεταξύ `finalWorth` και `age`, ενώ το δεύτερο εξέτασε τη σχέση μεταξύ `finalWorth` και `total_tax_rate_country`.
-
----
-
-### 🛠️ Απαιτήσεις
+###  Απαιτήσεις
 
 ```bash
 pip install pandas matplotlib seaborn scikit-learn scipy
@@ -164,22 +117,14 @@ pip install pandas matplotlib seaborn scikit-learn scipy
 
 ---
 
-### ▶️ Εκτέλεση
+###  Εκτέλεση
 
 Κλωνοποιήστε το αποθετήριο και μεταβείτε σε αυτό με `git clone https://github.com/mrns20/Big-Data-Analysis-Project.git && cd Big-Data-Analysis-Project`. Στη συνέχεια εγκαταστήστε τις απαιτούμενες βιβλιοθήκες με `pip install pandas matplotlib seaborn scikit-learn scipy` και εκτελέστε το script ανάλυσης με `python Dataset_analysis_code.py`. Βεβαιωθείτε ότι το αρχείο `Billionaires Statistics Dataset.csv` βρίσκεται στον ίδιο φάκελο με το script πριν από την εκτέλεση.
 
 ---
 
-### 📈 Αποτελέσματα
+###  Αποτελέσματα
 
 Η εκτέλεση του script παράγει μια σειρά από επεξεργασμένα και κανονικοποιημένα αρχεία CSV, καθώς και οπτικοποιήσεις που περιλαμβάνουν δεντρογράμματα για την ιεραρχική συσταδοποίηση, διαγράμματα διασποράς για κάθε μέθοδο και γραφικές παραστάσεις SSE και Silhouette Coefficient για τον K-Means σε διάφορες τιμές k. Επίσης εκτυπώνεται στην κονσόλα συνοπτική σύγκριση του Silhouette Coefficient και του χρόνου εκτέλεσης και των τριών αλγορίθμων.
 
----
 
-### 📚 Αναφορές
-
-- [Scikit-learn Documentation](https://scikit-learn.org/)
-- [GeeksForGeeks — Ανίχνευση Ακραίων Τιμών σε Python](https://www.geeksforgeeks.org/detect-and-remove-the-outliers-using-python/)
-- [Matplotlib Subplots](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_demo.html)
-- [Seaborn Tutorial](https://www.geeksforgeeks.org/python-seaborn-tutorial/)
-- [StandardScaler — Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
